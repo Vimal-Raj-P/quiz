@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="startcontainer" id="startcontainer">
+            <h3>Total Questions : <span id="qno">ㅤ</span></h3>
+            <button onclick="start()" id="testbtn">Take Test</button>
+        </div>
+        <div class="wrapper" id="wrapper">
+            <div class="timer">
+                 <h4>Score : <span id="score">0</span></h4>
+                 <span id="timing"> <img src="clock.png" alt="" height="20px" width="20px"> <span id="time">ㅤ</span></span>
+            </div>
+              <div class="question">
+                <h2 > <span id="sno">ㅤ</span><span>)</span> <span id="question">ㅤ</span></h2>
+              </div>
+              <div class="answer">
+                <h4 id="option1" onclick="select(this.id)">ㅤ</h4>
+                <h4 id="option2" onclick="select(this.id)">ㅤ</h4>
+                <h4 id="option3" onclick="select(this.id)">ㅤ</h4>
+                <h4 id="option4" onclick="select(this.id)">ㅤ</h4>
+              </div>
+        </div>
+
+        <div class="show" id="scoreshow">
+          <h2> <span>Your Scote :</span> <span id="show">ㅤ</span></h2>
+          <button id="back" onclick="back()">Back</button>
+       </div>
+    </div>
+
+</body>
+</html>
